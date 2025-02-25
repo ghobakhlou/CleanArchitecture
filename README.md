@@ -39,6 +39,7 @@ For more details, see
 - [MediatR](https://github.com/jbogard/MediatR)
 - [CQRS](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 - [HotChocolate](https://chillicream.com/docs/hotchocolate)
+- [PostgreSQL] (https://www.postgresql.org/)
 
 ## Database Migration
 
