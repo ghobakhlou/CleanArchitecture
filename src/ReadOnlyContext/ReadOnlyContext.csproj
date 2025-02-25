@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>ReadOnlyContext</RootNamespace>
+		<AssemblyName>ReadOnlyContext</AssemblyName>
+		<MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+		<MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="ObjectTypes\**" />
+	  <Compile Remove="QueryModels\**" />
+	  <EmbeddedResource Remove="ObjectTypes\**" />
+	  <EmbeddedResource Remove="QueryModels\**" />
+	  <None Remove="ObjectTypes\**" />
+	  <None Remove="QueryModels\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Include="QueryModels\Course.cs" />
+	  <Compile Include="QueryModels\Enrollment.cs" />
+	  <Compile Include="QueryModels\Student.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="13.0.1" />
+		<PackageReference Include="Audit.EntityFramework.Core" Version="24.0.1" />
+		<PackageReference Include="Azure.Identity" Version="1.10.4" />
+		<PackageReference Include="EFCore.NamingConventions" Version="8.0.3" />
+		<PackageReference Include="HotChocolate.Types" Version="13.8.1" />
+		<PackageReference Include="HotChocolate.Data" Version="13.8.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="7.0.15" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.1" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
+		<PackageReference Include="HotChocolate.Types.Analyzers" Version="13.8.1">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="HotChocolate.Execution" Version="13.8.1" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<ProjectReference Include="..\Shared\Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ObjectTypes\" />
+	  <Folder Include="ReadOnlyConfiguration\" />
+	</ItemGroup>
+
+</Project>

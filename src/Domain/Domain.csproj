@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\**" />
+    <Compile Remove="Exceptions\**" />
+    <Compile Remove="Kernel\**" />
+    <Compile Remove="Specifications\**" />
+    <Compile Remove="ValueObjects\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Kernel\**" />
+    <EmbeddedResource Remove="Specifications\**" />
+    <EmbeddedResource Remove="ValueObjects\**" />
+    <None Remove="Common\**" />
+    <None Remove="Exceptions\**" />
+    <None Remove="Kernel\**" />
+    <None Remove="Specifications\**" />
+    <None Remove="ValueObjects\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Morts.SpecificationPattern" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+</Project>
