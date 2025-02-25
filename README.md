@@ -46,11 +46,6 @@ Run the following commands to manage database migrations:
 
 ```bash
 cd src
-
-
-## Database Migration: 
-```bash
-cd src
 ```
 
 ```bash
