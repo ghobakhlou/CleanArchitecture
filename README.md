@@ -1,4 +1,4 @@
-# Project Name
+# CleanArchitecture With DotNet
 
 A sample microservice demonstrating a clean, modern architecture built with ASP.NET Core, Entity Framework Core, and GraphQL.
 
