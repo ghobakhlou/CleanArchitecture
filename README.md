@@ -23,7 +23,7 @@ A sample microservice demonstrating a clean, modern architecture built with ASP.
   - HotChocolate is integrated to provide a robust GraphQL API layer, supporting efficient queries and mutations with features like filtering, sorting, and projections.
   - More details can be found in the [HotChocolate Documentation](https://chillicream.com/docs/hotchocolate).
 
-These design choices not only ensure the application is robust and scalable but also foster a codebase that's easy to maintain and extend. We invite you to explore the code to see how these principles are applied throughout the solution.
+These design choices not only ensure the application is robust and scalable but also foster a codebase that's easy to maintain and extend. I invite you to explore the code to see how these principles are applied throughout the solution.
 
 For more details, see
    - [CQRS and DDD patterns in a microservice](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns).
