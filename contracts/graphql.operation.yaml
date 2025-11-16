@@ -1,0 +1,17 @@
+runtime:
+  namespace: Api
+shape:
+  rootType: Mutation
+  entryService: Application.Student.StudentOperationsEntry
+  cancellationTokenParameter: cancellationToken
+response:
+  wrapperType: Application.Common.Exceptions.ResponseMessage
+  helperMethod: ToResponse
+usings:
+  - System
+  - System.Threading
+  - System.Threading.Tasks
+  - Application.Common.Exceptions
+  - Application.Student
+  - Application.Student.Inputs
+  - HotChocolate
