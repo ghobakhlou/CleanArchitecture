@@ -1,0 +1,9 @@
+operation: mutation
+method: EnrollStudent
+summary: Enrolls a student via the StudentOperationsEntry seam.
+description: Enrolls a student by orchestrating validation, enrollment, and persistence via StudentOperationsEntry.
+inputType: Application.Student.Inputs.EnrollStudentInput
+resultType: System.Guid
+entryMethod: EnrollStudentAsync
+successPayload: result.IsSuccess ? result.Value : System.Guid.Empty
+fileName: Students.Enroll.g.cs

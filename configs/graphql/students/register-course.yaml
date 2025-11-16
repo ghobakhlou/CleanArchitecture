@@ -1,0 +1,9 @@
+operation: mutation
+method: RegisterNewCourse
+summary: Registers a new course via StudentOperationsEntry.
+description: Creates a new course while enforcing uniqueness through the shared field registry.
+inputType: Application.Student.Inputs.RegisterNewCourseInput
+resultType: System.Guid
+entryMethod: RegisterCourseAsync
+successPayload: result.IsSuccess ? result.Value : System.Guid.Empty
+fileName: Students.RegisterCourse.g.cs
